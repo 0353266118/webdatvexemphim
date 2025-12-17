@@ -1,0 +1,111 @@
+/* Navbar Styles */
+.navbar {
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+    transition: var(--theme-transition);
+    border-bottom: none;
+    padding: 0.75rem 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.navbar .nav-link,
+.navbar .btn {
+    color: var(--bs-body-color);
+    transition: var(--theme-transition);
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.75rem;
+}
+
+/* Hover effect for nav buttons */
+.navbar .nav-link:hover,
+.navbar .btn:hover {
+    background-color: var(--bs-secondary-bg);
+    color: var(--bs-primary);
+    text-decoration: none;
+}
+
+/* Admin navbar */
+#admin-navbar {
+    padding-top: 0px;
+    padding: 0rem 0rem;
+    border-radius: 15px;
+    background-color: transparent !important;
+    box-shadow: none;
+    border: none;
+}
+
+#navbar-container {
+    padding: 0rem 1rem;
+    background-color: transparent !important;
+    border-radius: 15px;
+    box-shadow: none;
+    border: none;
+}
+/* Navbar2 styling - áp dụng cho thẻ nav bên trong */
+#navbar2 {
+    padding-top: 0px;
+    background-color: transparent !important;
+}
+
+#navbar2 .navbar {
+    border-radius: 15px !important;
+    border: none;
+    overflow: hidden;
+    background-color: transparent !important;
+    padding-top: 0px;
+}
+
+#navbar2 {
+    border-radius: 15px !important;
+    background-color: transparent !important;
+}
+
+#navbar2 > div {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* Theme Toggle Button */
+#toggle-theme-btn {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    color: var(--bs-body-color);
+}
+
+#toggle-theme-btn:hover {
+    background: rgba(var(--bs-primary-rgb), 0.2);
+    transform: rotate(180deg) scale(1.1);
+    border-color: var(--bs-primary);
+}
+
+html[data-bs-theme="dark"] #toggle-theme-btn {
+    border-color: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.user-dropdown-btn:hover {
+    background: var(--bs-primary);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(var(--bs-primary-rgb), 0.3);
+}
+
+#navbar-header {
+    background: transparent !important;
+    backdrop-filter: blur(20px);
+    border-bottom: none !important;
+    padding: 0rem 1rem !important; /* Giảm padding top-bottom từ 0.5rem xuống 0.25rem */
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1030;
+    min-height: 30px; /* Thu ngắn chiều cao từ 56px xuống 45px */
+    border: none !important;
+}

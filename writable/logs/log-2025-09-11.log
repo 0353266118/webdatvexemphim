@@ -1,0 +1,261 @@
+CRITICAL - 2025-09-11 08:21:40 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "sections/carousel.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sections/carousel.php')
+ 2 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('sections/carousel', null, true)
+ 3 APPPATH\Views\home\index.php(9): CodeIgniter\View\View->include('sections/carousel')
+ 4 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4-DSS\\app\\Views\\home\\index.php')
+ 5 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('home/index', [], true)
+ 7 APPPATH\Controllers\HomeController.php(19): view('home/index', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-09-11 08:22:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-11 08:22:06 --> ErrorException: Undefined variable $genres
+[Method: GET, Route: /]
+in APPPATH\Views\sections\navbar2.php on line 19.
+ 1 APPPATH\Views\sections\navbar2.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $genres', 'C:\\xampp\\htdocs\\ci4-DSS\\app\\Views\\sections\\navbar2.php', 19)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4-DSS\\app\\Views\\sections\\navbar2.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('sections/navbar2', null, true)
+ 5 APPPATH\Views\home\index.php(14): CodeIgniter\View\View->include('sections/navbar2')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4-DSS\\app\\Views\\home\\index.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('home/index', [], true)
+ 9 APPPATH\Controllers\HomeController.php(19): view('home/index', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeController->index()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-09-11 08:22:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-11 08:22:28 --> ErrorException: Undefined variable $genres
+[Method: GET, Route: /]
+in APPPATH\Views\sections\navbar2.php on line 19.
+ 1 APPPATH\Views\sections\navbar2.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $genres', 'C:\\xampp\\htdocs\\ci4-DSS\\app\\Views\\sections\\navbar2.php', 19)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4-DSS\\app\\Views\\sections\\navbar2.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('sections/navbar2', null, true)
+ 5 APPPATH\Views\home\index.php(14): CodeIgniter\View\View->include('sections/navbar2')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4-DSS\\app\\Views\\home\\index.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('home/index', [], true)
+ 9 APPPATH\Controllers\HomeController.php(19): view('home/index', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeController->index()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-09-11 08:23:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-11 08:23:06 --> ErrorException: Undefined variable $genres
+[Method: GET, Route: /]
+in APPPATH\Views\sections\navbar2.php on line 19.
+ 1 APPPATH\Views\sections\navbar2.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $genres', 'C:\\xampp\\htdocs\\ci4-DSS\\app\\Views\\sections\\navbar2.php', 19)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4-DSS\\app\\Views\\sections\\navbar2.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('sections/navbar2', null, true)
+ 5 APPPATH\Views\home\index.php(14): CodeIgniter\View\View->include('sections/navbar2')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4-DSS\\app\\Views\\home\\index.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('home/index', [], true)
+ 9 APPPATH\Controllers\HomeController.php(19): view('home/index', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeController->index()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-09-11 08:23:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 08:24:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-11 08:24:06 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "sections/navbar2.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sections/navbar2.php')
+ 2 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('sections/navbar2', null, true)
+ 3 APPPATH\Views\home\index.php(14): CodeIgniter\View\View->include('sections/navbar2')
+ 4 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4-DSS\\app\\Views\\home\\index.php')
+ 5 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('home/index', [], true)
+ 7 APPPATH\Controllers\HomeController.php(19): view('home/index', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-09-11 08:24:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-11 08:27:27 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "home.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('home', [], true)
+ 3 APPPATH\Controllers\HomeController.php(6): view('home')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-09-11 08:29:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 08:30:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 08:30:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 08:31:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 08:31:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 08:31:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 08:32:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 08:36:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 08:36:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-11 08:47:46 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "tuvan/form.php"
+[Method: GET, Route: tuvan]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('tuvan/form.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('tuvan/form', [], true)
+ 3 APPPATH\Controllers\TuVanController.php(7): view('tuvan/form')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TuVanController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TuVanController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\ci4-DSS\\public\\index.php')
+CRITICAL - 2025-09-11 08:47:50 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "tuvan/form.php"
+[Method: GET, Route: tuvan]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('tuvan/form.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('tuvan/form', [], true)
+ 3 APPPATH\Controllers\TuVanController.php(7): view('tuvan/form')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TuVanController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TuVanController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\ci4-DSS\\public\\index.php')
+CRITICAL - 2025-09-11 08:48:41 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layouts/main.php"
+[Method: GET, Route: tuvan]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layouts/main.php')
+ 2 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('layouts/main', [], true)
+ 3 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('Content/formnhap', [], true)
+ 4 APPPATH\Controllers\TuVanController.php(7): view('Content/formnhap')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TuVanController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TuVanController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\ci4-DSS\\public\\index.php')
+CRITICAL - 2025-09-11 08:49:18 --> ErrorException: Undefined array key "algorithms"
+[Method: POST, Route: tuvan/process]
+in APPPATH\Models\AHPModel.php on line 33.
+ 1 APPPATH\Models\AHPModel.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "algorithms"', 'C:\\xampp\\htdocs\\ci4-DSS\\app\\Models\\AHPModel.php', 33)
+ 2 APPPATH\Controllers\TuVanController.php(17): App\Models\AHPModel->calculateWeights([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TuVanController->process()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TuVanController))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\ci4-DSS\\public\\index.php')
+CRITICAL - 2025-09-11 08:53:44 --> ErrorException: Undefined array key "programming"
+[Method: POST, Route: tuvan/process]
+in APPPATH\Models\AHPModel.php on line 33.
+ 1 APPPATH\Models\AHPModel.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "programming"', 'C:\\xampp\\htdocs\\ci4-DSS\\app\\Models\\AHPModel.php', 33)
+ 2 APPPATH\Controllers\TuVanController.php(17): App\Models\AHPModel->calculateWeights([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TuVanController->process()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TuVanController))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\ci4-DSS\\public\\index.php')
+CRITICAL - 2025-09-11 08:55:34 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "tuvan/form.php"
+[Method: GET, Route: tuvan]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('tuvan/form.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('tuvan/form', [], true)
+ 3 APPPATH\Controllers\TuVanController.php(24): view('tuvan/form', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TuVanController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TuVanController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\ci4-DSS\\public\\index.php')
+CRITICAL - 2025-09-11 08:56:10 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "tuvan/result.php"
+[Method: POST, Route: tuvan/process]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('tuvan/result.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('tuvan/result', [], true)
+ 3 APPPATH\Controllers\TuVanController.php(79): view('tuvan/result', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TuVanController->process()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TuVanController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\ci4-DSS\\public\\index.php')
+CRITICAL - 2025-09-11 08:56:26 --> ErrorException: Trying to access array offset on value of type float
+[Method: POST, Route: tuvan/process]
+in APPPATH\Views\tuvan\result.php on line 11.
+ 1 APPPATH\Views\tuvan\result.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type float', 'C:\\xampp\\htdocs\\ci4-DSS\\app\\Views\\tuvan\\result.php', 11)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4-DSS\\app\\Views\\tuvan\\result.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('tuvan/result', [], true)
+ 5 APPPATH\Controllers\TuVanController.php(79): view('tuvan/result', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TuVanController->process()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TuVanController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\ci4-DSS\\public\\index.php')
+CRITICAL - 2025-09-11 09:13:31 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "nganh/index.php"
+[Method: GET, Route: nganh]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('nganh/index.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('nganh/index', [], true)
+ 3 APPPATH\Controllers\NganhController.php(53): view('nganh/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\NganhController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NganhController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\ci4-DSS\\public\\index.php')
+CRITICAL - 2025-09-11 09:24:42 --> ErrorException: Array to string conversion
+[Method: GET, Route: nganh]
+in APPPATH\Views\nganh\index.php on line 23.
+ 1 APPPATH\Views\nganh\index.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\ci4-DSS\\app\\Views\\nganh\\index.php', 23)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4-DSS\\app\\Views\\nganh\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('nganh/index', [], true)
+ 5 APPPATH\Controllers\NganhController.php(53): view('nganh/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\NganhController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NganhController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\ci4-DSS\\public\\index.php')
+CRITICAL - 2025-09-11 09:25:07 --> ErrorException: Array to string conversion
+[Method: GET, Route: nganh]
+in APPPATH\Views\nganh\index.php on line 23.
+ 1 APPPATH\Views\nganh\index.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\ci4-DSS\\app\\Views\\nganh\\index.php', 23)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4-DSS\\app\\Views\\nganh\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('nganh/index', [], true)
+ 5 APPPATH\Controllers\NganhController.php(53): view('nganh/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\NganhController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NganhController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\ci4-DSS\\public\\index.php')

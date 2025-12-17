@@ -1,0 +1,150 @@
+CRITICAL - 2025-09-16 19:02:30 --> Error: Cannot access private property App\Models\AHPModel::$criteriaMatrix
+[Method: POST, Route: tuvan/process]
+in SYSTEMPATH\BaseModel.php on line 1878.
+ 1 SYSTEMPATH\Model.php(889): CodeIgniter\BaseModel->__get('criteriaMatrix')
+ 2 APPPATH\Controllers\TuVanController.php(113): CodeIgniter\Model->__get('criteriaMatrix')
+ 3 APPPATH\Controllers\TuVanController.php(107): App\Controllers\TuVanController->getAHPDetails(Object(App\Models\AHPModel), [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TuVanController->process()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TuVanController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-16 19:04:23 --> Error: Cannot access private property App\Models\AHPModel::$criteriaMatrix
+[Method: POST, Route: tuvan/process]
+in SYSTEMPATH\BaseModel.php on line 1878.
+ 1 SYSTEMPATH\Model.php(889): CodeIgniter\BaseModel->__get('criteriaMatrix')
+ 2 APPPATH\Controllers\TuVanController.php(113): CodeIgniter\Model->__get('criteriaMatrix')
+ 3 APPPATH\Controllers\TuVanController.php(107): App\Controllers\TuVanController->getAHPDetails(Object(App\Models\AHPModel), [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TuVanController->process()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TuVanController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-16 19:04:28 --> Error: Cannot access private property App\Models\AHPModel::$criteriaMatrix
+[Method: POST, Route: tuvan/process]
+in SYSTEMPATH\BaseModel.php on line 1878.
+ 1 SYSTEMPATH\Model.php(889): CodeIgniter\BaseModel->__get('criteriaMatrix')
+ 2 APPPATH\Controllers\TuVanController.php(113): CodeIgniter\Model->__get('criteriaMatrix')
+ 3 APPPATH\Controllers\TuVanController.php(107): App\Controllers\TuVanController->getAHPDetails(Object(App\Models\AHPModel), [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TuVanController->process()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TuVanController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-16 19:05:09 --> Error: Call to undefined method CodeIgniter\View\View::getSkillName()
+[Method: POST, Route: tuvan/process]
+in APPPATH\Views\tuvan\result.php on line 76.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('tuvan/result', [], true)
+ 4 APPPATH\Controllers\TuVanController.php(102): view('tuvan/result', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TuVanController->process()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TuVanController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-16 19:06:31 --> Error: Cannot access private property App\Models\AHPModel::$criteriaMatrix
+[Method: POST, Route: tuvan/process]
+in SYSTEMPATH\BaseModel.php on line 1878.
+ 1 SYSTEMPATH\Model.php(889): CodeIgniter\BaseModel->__get('criteriaMatrix')
+ 2 APPPATH\Controllers\TuVanController.php(113): CodeIgniter\Model->__get('criteriaMatrix')
+ 3 APPPATH\Controllers\TuVanController.php(107): App\Controllers\TuVanController->getAHPDetails(Object(App\Models\AHPModel), [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TuVanController->process()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TuVanController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-16 19:06:48 --> Error: Call to undefined method CodeIgniter\View\View::getSkillName()
+[Method: POST, Route: tuvan/process]
+in APPPATH\Views\tuvan\result.php on line 76.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('tuvan/result', [], true)
+ 4 APPPATH\Controllers\TuVanController.php(102): view('tuvan/result', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TuVanController->process()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TuVanController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-16 19:36:07 --> ErrorException: Undefined array key "ui_ux_designer"
+[Method: POST, Route: tuvan/process]
+in APPPATH\Views\tuvan\result.php on line 57.
+ 1 APPPATH\Views\tuvan\result.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ui_ux_designer"', 'C:\\xampp\\htdocs\\ci4-DSS\\app\\Views\\tuvan\\result.php', 57)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4-DSS\\app\\Views\\tuvan\\result.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('tuvan/result', [], true)
+ 5 APPPATH\Controllers\TuVanController.php(102): view('tuvan/result', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TuVanController->process()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TuVanController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-16 19:36:25 --> ErrorException: Undefined array key "ui_ux_designer"
+[Method: POST, Route: tuvan/process]
+in APPPATH\Views\tuvan\result.php on line 57.
+ 1 APPPATH\Views\tuvan\result.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ui_ux_designer"', 'C:\\xampp\\htdocs\\ci4-DSS\\app\\Views\\tuvan\\result.php', 57)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4-DSS\\app\\Views\\tuvan\\result.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('tuvan/result', [], true)
+ 5 APPPATH\Controllers\TuVanController.php(102): view('tuvan/result', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TuVanController->process()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TuVanController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-16 19:48:55 --> Error: Call to undefined method App\Models\AHPModel::calculateConsistencyRatio()
+[Method: POST, Route: tuvan/process]
+in APPPATH\Controllers\TuVanController.php on line 113.
+ 1 APPPATH\Controllers\TuVanController.php(107): App\Controllers\TuVanController->getAHPDetails(Object(App\Models\AHPModel), [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TuVanController->process()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TuVanController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-16 19:49:03 --> Error: Call to undefined method App\Models\AHPModel::calculateConsistencyRatio()
+[Method: POST, Route: tuvan/process]
+in APPPATH\Controllers\TuVanController.php on line 113.
+ 1 APPPATH\Controllers\TuVanController.php(107): App\Controllers\TuVanController->getAHPDetails(Object(App\Models\AHPModel), [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TuVanController->process()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TuVanController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-16 19:54:39 --> ErrorException: Undefined array key "ui_ux_designer"
+[Method: POST, Route: tuvan/process]
+in APPPATH\Views\tuvan\result.php on line 57.
+ 1 APPPATH\Views\tuvan\result.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ui_ux_designer"', 'C:\\xampp\\htdocs\\ci4-DSS\\app\\Views\\tuvan\\result.php', 57)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4-DSS\\app\\Views\\tuvan\\result.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('tuvan/result', [], true)
+ 5 APPPATH\Controllers\TuVanController.php(102): view('tuvan/result', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TuVanController->process()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TuVanController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-16 19:55:55 --> ErrorException: Undefined variable $results
+[Method: POST, Route: tuvan/process]
+in APPPATH\Views\tuvan\result.php on line 24.
+ 1 APPPATH\Views\tuvan\result.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $results', 'C:\\xampp\\htdocs\\ci4-DSS\\app\\Views\\tuvan\\result.php', 24)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4-DSS\\app\\Views\\tuvan\\result.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('tuvan/result', [], true)
+ 5 APPPATH\Controllers\TuVanController.php(46): view('tuvan/result', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TuVanController->process()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TuVanController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

@@ -1,0 +1,289 @@
+.carousel{
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+    
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.main-carousel .carousel-indicators {
+    display: none;
+}
+
+.carousel-thumbnails {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 1rem;
+    z-index: 5;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0.75rem 1.5rem;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.carousel-thumb {
+    position: relative;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    opacity: 0.7;
+    transform: scale(0.9);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-thumb:hover {
+    opacity: 0.9;
+    transform: scale(0.95);
+}
+
+.carousel-thumb.active {
+    opacity: 1;
+    transform: scale(1);
+    box-shadow: 0 4px 16px rgba(255, 255, 255, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+.carousel-thumb img {
+    width: 80px;
+    height: 50px;
+    object-fit: cover;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.carousel-thumb:hover img {
+    filter: brightness(1.1);
+}
+
+.carousel-thumb.active img {
+    filter: brightness(1.2);
+}
+
+.thumb-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 0.5rem 0.25rem 0.25rem;
+    line-height: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+
+/* Dark theme adjustments */
+html[data-bs-theme="dark"] .carousel-thumbnails {
+    background: rgba(33, 37, 41, 0.8);
+    border-color: rgba(255, 255, 255, 0.05);
+}
+
+html[data-bs-theme="dark"] .carousel-thumb.active {
+    border-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 4px 16px rgba(255, 255, 255, 0.2);
+}
+
+/* Animation khi active */
+.carousel-thumb.active::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #ff6b35, #f7931e, #ff6b35);
+    border-radius: 0.75rem;
+    z-index: -1;
+    animation: borderGlow 2s linear infinite;
+}
+
+@keyframes borderGlow {
+    0%, 100% {
+        background: linear-gradient(45deg, #ff6b35, #f7931e, #ff6b35);
+    }
+    25% {
+        background: linear-gradient(45deg, #f7931e, #ff6b35, #f7931e);
+    }
+    50% {
+        background: linear-gradient(45deg, #ff6b35, #f7931e, #ff6b35);
+    }
+    75% {
+        background: linear-gradient(45deg, #f7931e, #ff6b35, #f7931e);
+    }
+}
+
+/* Hover effect với ripple */
+.carousel-thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-thumb::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.4s ease, height 0.4s ease;
+}
+
+.carousel-thumb:hover::after {
+    width: 100px;
+    height: 100px;
+}
+
+/* Audio toggle button adjustment */
+#audioToggle {
+    bottom: 90px; /* Move up to avoid overlapping with thumbnails */
+}
+
+/* Shadow overlay cho 4 góc - cải thiện */
+.main-carousel::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        /* Góc trên trái - đen đậm hơn */
+        radial-gradient(circle at top left, rgba(0, 0, 0, 0.8) 0%, transparent 70%),
+        /* Góc trên phải */
+        radial-gradient(circle at top right, rgba(0, 0, 0, 0.8) 0%, transparent 70%),
+        /* Góc dưới trái */
+        radial-gradient(circle at bottom left, rgba(0, 0, 0, 0.8) 0%, transparent 70%),
+        /* Góc dưới phải */
+        radial-gradient(circle at bottom right, rgba(0, 0, 0, 0.8) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 2;
+}
+
+/* Carousel Caption - Force white text regardless of theme */
+.main-carousel .carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    right: auto;
+    bottom: auto;
+    transform: translateY(-50%);
+    text-align: left;
+    max-width: 35%;
+    background: transparent !important;
+    padding: 1rem 7rem 2rem 2rem;
+    border: none !important;
+    z-index: 3; /* Above dark corners overlay */
+}
+
+.main-carousel .carousel-caption h2 {
+    color: #ffffff !important; /* Force white color */
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    line-height: 1.2;
+}
+
+.main-carousel .carousel-caption p {
+    color: #ffffff !important; /* Force white color */
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+    opacity: 0.95;
+}
+
+.main-carousel .carousel-caption .btn-main {
+    background: linear-gradient(135deg, #ff6b35, #f7931e) !important;
+    border: none !important;
+    padding: 0.75rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 2rem;
+    color: #ffffff !important; /* Force white text */
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
+    z-index: 4;
+    position: relative;
+}
+
+.main-carousel .carousel-caption .btn-main:hover {
+    color: #ffffff !important; /* Keep white on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 107, 53, 0.6);
+    background: linear-gradient(135deg, #f7931e, #ff6b35) !important;
+    text-decoration: none;
+}
+
+.main-carousel .carousel-caption .btn-main:focus,
+.main-carousel .carousel-caption .btn-main:active {
+    color: #ffffff !important; /* Keep white on focus/active */
+    background: linear-gradient(135deg, #ff6b35, #f7931e) !important;
+    box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
+}
+
+/* Class riêng cho dark corners */
+.carousel-dark-corners::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        /* Shadow từ trên xuống - đen đậm hơn */
+        linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, transparent 40%),
+        /* Shadow từ dưới lên */
+        linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, transparent 40%),
+        /* Shadow từ trái sang */
+        linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, transparent 30%),
+        /* Shadow từ phải sang */
+        linear-gradient(270deg, rgba(0, 0, 0, 0.5) 0%, transparent 30%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Vignette effect - tăng vùng sáng và đen đậm hơn */
+.carousel-vignette::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        /* Vignette chính - dịch chuyển về phải và tăng vùng sáng */
+        radial-gradient(ellipse 70% 90% at 70% 50%, transparent 30%, rgba(0, 0, 0, 0.2) 45%, rgba(0, 0, 0, 0.95) 75%),
+        /* Overlay thêm để làm tối các góc */
+        radial-gradient(circle at 20% 50%, rgba(0, 0, 0, 0.7) 0%, transparent 60%);
+    pointer-events: none;
+    z-index: 1;
+}
+

@@ -4,6 +4,7 @@
 namespace App\Controllers;
 
 use CodeIgniter\RESTful\ResourceController;
+use App\Models\MovieModel;
 
 class MovieController extends ResourceController
 {
@@ -12,12 +13,18 @@ class MovieController extends ResourceController
      * @var string
      */
     protected $modelName = 'App\Models\MovieModel';
+    // kết nối MovieController với MovieModel
+
+
 
     /**
      * Định dạng response mặc định
      * @var string
      */
     protected $format    = 'json';
+    // ra lệnh cho controller trả về dữ liệu ở định dạng JSON
+
+
 
     /**
      * Hàm này xử lý yêu cầu: GET /movies
@@ -25,13 +32,24 @@ class MovieController extends ResourceController
      */
     public function index()
     {
-        // Lấy tất cả dữ liệu từ Model (tương đương "SELECT * FROM movies")
-        $movies = $this->model->findAll();
+        // Lấy tham số ?status=... từ URL
+        $status = $this->request->getGet('status');
+
+        // Nếu có tham số status, thì lọc theo status
+        if ($status === 'now_showing' || $status === 'coming_soon') {
+            $movies = $this->model->where('status', $status)->findAll();
+        } else {
+            // Nếu không có, lấy tất cả
+            $movies = $this->model->findAll();
+        }
 
         // Trả về dữ liệu dưới dạng JSON
         return $this->respond($movies);
     }
 
+
+
+    
     /**
      * Hàm này xử lý yêu cầu: GET /movies/{id}
      * Ví dụ: /movies/1

@@ -1,0 +1,514 @@
+ERROR - 2025-12-18 03:09:12 --> Exception: Unable to prepare statement: 11, database disk image is malformed in C:\xampp\htdocs\Service7\system\Database\SQLite3\Connection.php:176
+Stack trace:
+#0 C:\xampp\htdocs\Service7\system\Database\SQLite3\Connection.php(176): SQLite3->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\Service7\system\Database\BaseConnection.php(729): CodeIgniter\Database\SQLite3\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Service7\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Service7\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Service7\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Service7\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Service7\app\Controllers\MovieController.php(29): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Service7\system\CodeIgniter.php(933): App\Controllers\MovieController->index()
+#8 C:\xampp\htdocs\Service7\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MovieController))
+#9 C:\xampp\htdocs\Service7\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Service7\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Service7\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Service7\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\Service7\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-12-18 03:09:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: 11, database disk image is malformed
+[Method: GET, Route: movies]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `movies`', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\MovieController.php(29): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MovieController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MovieController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Service7\\public\\index.php')
+CRITICAL - 2025-12-18 03:09:12 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: 11, database disk image is malformed
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 181.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\SQLite3\Connection->execute('SELECT *
+FROM `movies`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `movies`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `movies`', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\MovieController.php(29): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MovieController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MovieController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Service7\\public\\index.php')
+CRITICAL - 2025-12-18 03:09:12 --> [Caused by] Exception: Unable to prepare statement: 11, database disk image is malformed
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 176.
+ 1 SYSTEMPATH\Database\SQLite3\Connection.php(176): SQLite3->query('SELECT *
+FROM `movies`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\SQLite3\Connection->execute('SELECT *
+FROM `movies`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `movies`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `movies`', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\MovieController.php(29): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MovieController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MovieController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Service7\\public\\index.php')
+ERROR - 2025-12-18 03:09:12 --> Exception: Unable to prepare statement: 11, database disk image is malformed in C:\xampp\htdocs\Service7\system\Database\SQLite3\Connection.php:176
+Stack trace:
+#0 C:\xampp\htdocs\Service7\system\Database\SQLite3\Connection.php(176): SQLite3->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\Service7\system\Database\BaseConnection.php(729): CodeIgniter\Database\SQLite3\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Service7\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Service7\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Service7\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Service7\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Service7\app\Controllers\MovieController.php(29): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Service7\system\CodeIgniter.php(933): App\Controllers\MovieController->index()
+#8 C:\xampp\htdocs\Service7\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MovieController))
+#9 C:\xampp\htdocs\Service7\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Service7\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Service7\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Service7\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\Service7\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-12-18 03:09:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: 11, database disk image is malformed
+[Method: GET, Route: movies]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `movies`', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\MovieController.php(29): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MovieController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MovieController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Service7\\public\\index.php')
+CRITICAL - 2025-12-18 03:09:12 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: 11, database disk image is malformed
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 181.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\SQLite3\Connection->execute('SELECT *
+FROM `movies`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `movies`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `movies`', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\MovieController.php(29): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MovieController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MovieController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Service7\\public\\index.php')
+CRITICAL - 2025-12-18 03:09:12 --> [Caused by] Exception: Unable to prepare statement: 11, database disk image is malformed
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 176.
+ 1 SYSTEMPATH\Database\SQLite3\Connection.php(176): SQLite3->query('SELECT *
+FROM `movies`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\SQLite3\Connection->execute('SELECT *
+FROM `movies`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `movies`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `movies`', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\MovieController.php(29): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MovieController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MovieController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Service7\\public\\index.php')
+ERROR - 2025-12-18 03:10:16 --> Exception: Unable to prepare statement: 11, database disk image is malformed in C:\xampp\htdocs\Service7\system\Database\SQLite3\Connection.php:176
+Stack trace:
+#0 C:\xampp\htdocs\Service7\system\Database\SQLite3\Connection.php(176): SQLite3->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\Service7\system\Database\BaseConnection.php(729): CodeIgniter\Database\SQLite3\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Service7\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Service7\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Service7\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Service7\system\BaseModel.php(611): CodeIgniter\Model->doFind(true, '1')
+#6 C:\xampp\htdocs\Service7\app\Controllers\MovieController.php(43): CodeIgniter\BaseModel->find('1')
+#7 C:\xampp\htdocs\Service7\system\CodeIgniter.php(933): App\Controllers\MovieController->show('1')
+#8 C:\xampp\htdocs\Service7\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MovieController))
+#9 C:\xampp\htdocs\Service7\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Service7\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Service7\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Service7\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\Service7\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-12-18 03:10:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: 11, database disk image is malformed
+[Method: GET, Route: movies/1]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `movies`
+WHERE `movies`.`id` = :movies.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(611): CodeIgniter\Model->doFind(true, '1')
+ 4 APPPATH\Controllers\MovieController.php(43): CodeIgniter\BaseModel->find('1')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MovieController->show('1')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MovieController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Service7\\public\\index.php')
+CRITICAL - 2025-12-18 03:10:16 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: 11, database disk image is malformed
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 181.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\SQLite3\Connection->execute('SELECT *
+FROM `movies`
+WHERE `movies`.`id` = \'1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `movies`
+WHERE `movies`.`id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `movies`
+WHERE `movies`.`id` = :movies.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(611): CodeIgniter\Model->doFind(true, '1')
+ 6 APPPATH\Controllers\MovieController.php(43): CodeIgniter\BaseModel->find('1')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MovieController->show('1')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MovieController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Service7\\public\\index.php')
+CRITICAL - 2025-12-18 03:10:16 --> [Caused by] Exception: Unable to prepare statement: 11, database disk image is malformed
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 176.
+ 1 SYSTEMPATH\Database\SQLite3\Connection.php(176): SQLite3->query('SELECT *
+FROM `movies`
+WHERE `movies`.`id` = \'1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\SQLite3\Connection->execute('SELECT *
+FROM `movies`
+WHERE `movies`.`id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `movies`
+WHERE `movies`.`id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `movies`
+WHERE `movies`.`id` = :movies.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(611): CodeIgniter\Model->doFind(true, '1')
+ 7 APPPATH\Controllers\MovieController.php(43): CodeIgniter\BaseModel->find('1')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MovieController->show('1')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MovieController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Service7\\public\\index.php')
+ERROR - 2025-12-18 03:11:48 --> Exception: Unable to prepare statement: 11, database disk image is malformed in C:\xampp\htdocs\Service7\system\Database\SQLite3\Connection.php:176
+Stack trace:
+#0 C:\xampp\htdocs\Service7\system\Database\SQLite3\Connection.php(176): SQLite3->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\Service7\system\Database\BaseConnection.php(729): CodeIgniter\Database\SQLite3\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Service7\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Service7\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Service7\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Service7\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Service7\app\Controllers\MovieController.php(29): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Service7\system\CodeIgniter.php(933): App\Controllers\MovieController->index()
+#8 C:\xampp\htdocs\Service7\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MovieController))
+#9 C:\xampp\htdocs\Service7\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Service7\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Service7\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Service7\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\Service7\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-12-18 03:11:48 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: 11, database disk image is malformed
+[Method: GET, Route: movies]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `movies`', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\MovieController.php(29): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MovieController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MovieController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Service7\\public\\index.php')
+CRITICAL - 2025-12-18 03:11:48 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: 11, database disk image is malformed
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 181.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\SQLite3\Connection->execute('SELECT *
+FROM `movies`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `movies`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `movies`', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\MovieController.php(29): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MovieController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MovieController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Service7\\public\\index.php')
+CRITICAL - 2025-12-18 03:11:48 --> [Caused by] Exception: Unable to prepare statement: 11, database disk image is malformed
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 176.
+ 1 SYSTEMPATH\Database\SQLite3\Connection.php(176): SQLite3->query('SELECT *
+FROM `movies`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\SQLite3\Connection->execute('SELECT *
+FROM `movies`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `movies`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `movies`', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\MovieController.php(29): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MovieController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MovieController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Service7\\public\\index.php')
+ERROR - 2025-12-18 03:11:49 --> Exception: Unable to prepare statement: 11, database disk image is malformed in C:\xampp\htdocs\Service7\system\Database\SQLite3\Connection.php:176
+Stack trace:
+#0 C:\xampp\htdocs\Service7\system\Database\SQLite3\Connection.php(176): SQLite3->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\Service7\system\Database\BaseConnection.php(729): CodeIgniter\Database\SQLite3\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Service7\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Service7\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Service7\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Service7\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Service7\app\Controllers\MovieController.php(29): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Service7\system\CodeIgniter.php(933): App\Controllers\MovieController->index()
+#8 C:\xampp\htdocs\Service7\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MovieController))
+#9 C:\xampp\htdocs\Service7\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Service7\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Service7\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Service7\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\Service7\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-12-18 03:11:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: 11, database disk image is malformed
+[Method: GET, Route: movies]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `movies`', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\MovieController.php(29): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MovieController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MovieController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Service7\\public\\index.php')
+CRITICAL - 2025-12-18 03:11:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: 11, database disk image is malformed
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 181.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\SQLite3\Connection->execute('SELECT *
+FROM `movies`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `movies`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `movies`', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\MovieController.php(29): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MovieController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MovieController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Service7\\public\\index.php')
+CRITICAL - 2025-12-18 03:11:49 --> [Caused by] Exception: Unable to prepare statement: 11, database disk image is malformed
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 176.
+ 1 SYSTEMPATH\Database\SQLite3\Connection.php(176): SQLite3->query('SELECT *
+FROM `movies`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\SQLite3\Connection->execute('SELECT *
+FROM `movies`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `movies`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `movies`', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\MovieController.php(29): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MovieController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MovieController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Service7\\public\\index.php')
+ERROR - 2025-12-18 03:12:24 --> Exception: Unable to prepare statement: 11, database disk image is malformed in C:\xampp\htdocs\Service7\system\Database\SQLite3\Connection.php:176
+Stack trace:
+#0 C:\xampp\htdocs\Service7\system\Database\SQLite3\Connection.php(176): SQLite3->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\Service7\system\Database\BaseConnection.php(729): CodeIgniter\Database\SQLite3\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Service7\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Service7\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Service7\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Service7\system\BaseModel.php(611): CodeIgniter\Model->doFind(true, '1')
+#6 C:\xampp\htdocs\Service7\app\Controllers\MovieController.php(43): CodeIgniter\BaseModel->find('1')
+#7 C:\xampp\htdocs\Service7\system\CodeIgniter.php(933): App\Controllers\MovieController->show('1')
+#8 C:\xampp\htdocs\Service7\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MovieController))
+#9 C:\xampp\htdocs\Service7\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Service7\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Service7\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Service7\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\Service7\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-12-18 03:12:24 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: 11, database disk image is malformed
+[Method: GET, Route: movies/1]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `movies`
+WHERE `movies`.`id` = :movies.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(611): CodeIgniter\Model->doFind(true, '1')
+ 4 APPPATH\Controllers\MovieController.php(43): CodeIgniter\BaseModel->find('1')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MovieController->show('1')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MovieController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Service7\\public\\index.php')
+CRITICAL - 2025-12-18 03:12:24 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: 11, database disk image is malformed
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 181.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\SQLite3\Connection->execute('SELECT *
+FROM `movies`
+WHERE `movies`.`id` = \'1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `movies`
+WHERE `movies`.`id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `movies`
+WHERE `movies`.`id` = :movies.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(611): CodeIgniter\Model->doFind(true, '1')
+ 6 APPPATH\Controllers\MovieController.php(43): CodeIgniter\BaseModel->find('1')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MovieController->show('1')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MovieController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Service7\\public\\index.php')
+CRITICAL - 2025-12-18 03:12:24 --> [Caused by] Exception: Unable to prepare statement: 11, database disk image is malformed
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 176.
+ 1 SYSTEMPATH\Database\SQLite3\Connection.php(176): SQLite3->query('SELECT *
+FROM `movies`
+WHERE `movies`.`id` = \'1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\SQLite3\Connection->execute('SELECT *
+FROM `movies`
+WHERE `movies`.`id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `movies`
+WHERE `movies`.`id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `movies`
+WHERE `movies`.`id` = :movies.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(611): CodeIgniter\Model->doFind(true, '1')
+ 7 APPPATH\Controllers\MovieController.php(43): CodeIgniter\BaseModel->find('1')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MovieController->show('1')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MovieController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Service7\\public\\index.php')
+ERROR - 2025-12-18 03:12:24 --> Exception: Unable to prepare statement: 11, database disk image is malformed in C:\xampp\htdocs\Service7\system\Database\SQLite3\Connection.php:176
+Stack trace:
+#0 C:\xampp\htdocs\Service7\system\Database\SQLite3\Connection.php(176): SQLite3->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\Service7\system\Database\BaseConnection.php(729): CodeIgniter\Database\SQLite3\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Service7\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Service7\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Service7\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Service7\system\BaseModel.php(611): CodeIgniter\Model->doFind(true, '1')
+#6 C:\xampp\htdocs\Service7\app\Controllers\MovieController.php(43): CodeIgniter\BaseModel->find('1')
+#7 C:\xampp\htdocs\Service7\system\CodeIgniter.php(933): App\Controllers\MovieController->show('1')
+#8 C:\xampp\htdocs\Service7\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MovieController))
+#9 C:\xampp\htdocs\Service7\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Service7\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Service7\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Service7\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\Service7\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-12-18 03:12:24 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: 11, database disk image is malformed
+[Method: GET, Route: movies/1]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `movies`
+WHERE `movies`.`id` = :movies.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(611): CodeIgniter\Model->doFind(true, '1')
+ 4 APPPATH\Controllers\MovieController.php(43): CodeIgniter\BaseModel->find('1')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MovieController->show('1')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MovieController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Service7\\public\\index.php')
+CRITICAL - 2025-12-18 03:12:24 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: 11, database disk image is malformed
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 181.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\SQLite3\Connection->execute('SELECT *
+FROM `movies`
+WHERE `movies`.`id` = \'1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `movies`
+WHERE `movies`.`id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `movies`
+WHERE `movies`.`id` = :movies.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(611): CodeIgniter\Model->doFind(true, '1')
+ 6 APPPATH\Controllers\MovieController.php(43): CodeIgniter\BaseModel->find('1')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MovieController->show('1')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MovieController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Service7\\public\\index.php')
+CRITICAL - 2025-12-18 03:12:24 --> [Caused by] Exception: Unable to prepare statement: 11, database disk image is malformed
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 176.
+ 1 SYSTEMPATH\Database\SQLite3\Connection.php(176): SQLite3->query('SELECT *
+FROM `movies`
+WHERE `movies`.`id` = \'1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\SQLite3\Connection->execute('SELECT *
+FROM `movies`
+WHERE `movies`.`id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `movies`
+WHERE `movies`.`id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `movies`
+WHERE `movies`.`id` = :movies.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(611): CodeIgniter\Model->doFind(true, '1')
+ 7 APPPATH\Controllers\MovieController.php(43): CodeIgniter\BaseModel->find('1')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MovieController->show('1')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MovieController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Service7\\public\\index.php')

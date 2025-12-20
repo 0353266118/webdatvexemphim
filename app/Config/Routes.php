@@ -44,6 +44,7 @@ $routes->get('/', static function () {
 // Route để lấy lịch chiếu của một phim cụ thể
 // Ví dụ: GET /schedules/movie/1 sẽ gọi ScheduleController::getByMovieId(1)
 $routes->get('schedules/movie/(:num)', 'ScheduleController::getByMovieId/$1');
+$routes->get('schedules/cinema/(:num)', 'ScheduleController::getByCinema/$1');
 
 // Route để lấy chi tiết một suất chiếu
 // Ví dụ: GET /schedules/123 sẽ gọi ScheduleController::show(123)
@@ -57,6 +58,9 @@ $routes->get('schedules/(:num)', 'ScheduleController::show/$1');
 // PUT /movies/(:num) -> MovieController::update($1) (Cập nhật)
 // DELETE /movies/(:num) -> MovieController::delete($1) (Xóa)
 $routes->resource('movies', ['controller' => 'MovieController']);
+
+$routes->resource('cinemas', ['controller' => 'CinemaController']);
+
 
 
 // === API Routes for Schedules (Em sẽ làm sau) ===

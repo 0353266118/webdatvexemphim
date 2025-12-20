@@ -10,7 +10,7 @@ class MovieSeeder extends Seeder
     {
         // Dữ liệu phim mẫu
         $data = [
-            [   
+            [   'id'       => 1,
                 'title' => 'Avengers: Endgame',
                 'description' => 'Phần cuối của series Avengers...',
                 'duration_minutes' => 181,
@@ -18,7 +18,7 @@ class MovieSeeder extends Seeder
                 'poster_url' => '/avengers.jpg',
                 'status' => 'now_showing'
             ],
-            [
+            [   'id'       => 2,
                 'title' => 'Spider-Man: No Way Home',
                 'description' => 'Peter Parker đối mặt với đa vũ trụ...',
                 'duration_minutes' => 148,
@@ -26,7 +26,7 @@ class MovieSeeder extends Seeder
                 'poster_url' => '/spiderman.jpg',
                 'status' => 'now_showing'
             ],
-            [
+            [   'id'       => 3,
                 'title' => 'Dune: Part Two',
                 'description' => 'Hành trình của Paul Atreides trên Arrakis...',
                 'duration_minutes' => 166,

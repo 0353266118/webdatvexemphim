@@ -1,8 +1,5 @@
 <?php
-// File: app/Controllers/MovieController.php
-
 namespace App\Controllers;
-
 use CodeIgniter\RESTful\ResourceController;
 
 class MovieController extends ResourceController

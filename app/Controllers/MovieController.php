@@ -4,57 +4,37 @@
 namespace App\Controllers;
 
 use CodeIgniter\RESTful\ResourceController;
-use App\Models\MovieModel;
 
 class MovieController extends ResourceController
 {
-    /**
-     * Tên của Model sẽ được sử dụng
-     * @var string
-     */
+
     protected $modelName = 'App\Models\MovieModel';
     // kết nối MovieController với MovieModel
 
-
-
-    /**
-     * Định dạng response mặc định
-     * @var string
-     */
     protected $format    = 'json';
     // ra lệnh cho controller trả về dữ liệu ở định dạng JSON
 
-
-
-    /**
-     * Hàm này xử lý yêu cầu: GET /movies
-     * Trả về một danh sách các phim
-     */
+    // hàm trả về danh sách tất cả phim
     public function index()
     {
-        // Lấy tham số ?status=... từ URL
-        $status = $this->request->getGet('status');
+        // Lấy đối tượng request thông qua hàm service()
+        $request = service('request');
 
-        // Nếu có tham số status, thì lọc theo status
+        // Lấy tham số 'status' từ query string
+        $status = $request->getGet('status');
+
         if ($status === 'now_showing' || $status === 'coming_soon') {
-            $movies = $this->model->where('status', $status)->findAll();
+            $movies = $this->model->where('status', $status)->findAll(); // khởi tạo Model movie
         } else {
-            // Nếu không có, lấy tất cả
             $movies = $this->model->findAll();
         }
 
-        // Trả về dữ liệu dưới dạng JSON
+        // Trả về danh sách phim dưới dạng JSON
         return $this->respond($movies);
     }
 
 
-
-    
-    /**
-     * Hàm này xử lý yêu cầu: GET /movies/{id}
-     * Ví dụ: /movies/1
-     * Trả về chi tiết của một phim
-     */
+    // hàm trả về chi tiết 1 phim dựa trên ID
     public function show($id = null)
     {
         // Tìm phim trong database dựa trên ID
@@ -64,7 +44,6 @@ class MovieController extends ResourceController
             // Nếu tìm thấy, trả về dữ liệu phim đó
             return $this->respond($movie);
         }
-
         // Nếu không tìm thấy, trả về lỗi 404 Not Found
         return $this->failNotFound('Không tìm thấy bộ phim với ID: ' . $id);
     }

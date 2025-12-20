@@ -41,6 +41,14 @@ $routes->get('/', static function () {
     return response()->setJSON(['status' => 'success', 'message' => 'Movie & Schedule Service is running.']);
 });
 
+// Route để lấy lịch chiếu của một phim cụ thể
+// Ví dụ: GET /schedules/movie/1 sẽ gọi ScheduleController::getByMovieId(1)
+$routes->get('schedules/movie/(:num)', 'ScheduleController::getByMovieId/$1');
+
+// Route để lấy chi tiết một suất chiếu
+// Ví dụ: GET /schedules/123 sẽ gọi ScheduleController::show(123)
+$routes->get('schedules/(:num)', 'ScheduleController::show/$1');
+
 // === API Routes for Movies ===
 // Dòng này sẽ tự động tạo các route:
 // GET /movies -> MovieController::index() (Lấy danh sách)

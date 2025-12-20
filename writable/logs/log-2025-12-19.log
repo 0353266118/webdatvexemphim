@@ -1,0 +1,102 @@
+ERROR - 2025-12-19 15:43:41 --> Exception: Unable to prepare statement: 1, no such table: schedules in C:\xampp\htdocs\Service7\system\Database\SQLite3\Connection.php:176
+Stack trace:
+#0 C:\xampp\htdocs\Service7\system\Database\SQLite3\Connection.php(176): SQLite3->query('SELECT `schedul...')
+#1 C:\xampp\htdocs\Service7\system\Database\BaseConnection.php(729): CodeIgniter\Database\SQLite3\Connection->execute('SELECT `schedul...')
+#2 C:\xampp\htdocs\Service7\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `schedul...')
+#3 C:\xampp\htdocs\Service7\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `schedul...', Array, false)
+#4 C:\xampp\htdocs\Service7\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Service7\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Service7\app\Controllers\ScheduleController.php(36): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Service7\system\CodeIgniter.php(933): App\Controllers\ScheduleController->getByMovieId('1')
+#8 C:\xampp\htdocs\Service7\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ScheduleController))
+#9 C:\xampp\htdocs\Service7\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Service7\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Service7\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Service7\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\Service7\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-12-19 15:43:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: 1, no such table: schedules
+[Method: GET, Route: schedules/movie/1]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `schedules`.`id`, `schedules`.`start_time`, `schedules`.`price`, `rooms`.`name` as `room_name`, `cinemas`.`name` as `cinema_name`, `cinemas`.`location`
+FROM `schedules`
+JOIN `rooms` ON `rooms`.`id` = `schedules`.`room_id`
+JOIN `cinemas` ON `cinemas`.`id` = `rooms`.`cinema_id`
+WHERE `schedules`.`movie_id` = :schedules.movie_id:
+ORDER BY `schedules`.`start_time` ASC', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\ScheduleController.php(36): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ScheduleController->getByMovieId('1')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ScheduleController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Service7\\public\\index.php')
+CRITICAL - 2025-12-19 15:43:41 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: 1, no such table: schedules
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 181.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\SQLite3\Connection->execute('SELECT `schedules`.`id`, `schedules`.`start_time`, `schedules`.`price`, `rooms`.`name` as `room_name`, `cinemas`.`name` as `cinema_name`, `cinemas`.`location`
+FROM `schedules`
+JOIN `rooms` ON `rooms`.`id` = `schedules`.`room_id`
+JOIN `cinemas` ON `cinemas`.`id` = `rooms`.`cinema_id`
+WHERE `schedules`.`movie_id` = \'1\'
+ORDER BY `schedules`.`start_time` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `schedules`.`id`, `schedules`.`start_time`, `schedules`.`price`, `rooms`.`name` as `room_name`, `cinemas`.`name` as `cinema_name`, `cinemas`.`location`
+FROM `schedules`
+JOIN `rooms` ON `rooms`.`id` = `schedules`.`room_id`
+JOIN `cinemas` ON `cinemas`.`id` = `rooms`.`cinema_id`
+WHERE `schedules`.`movie_id` = \'1\'
+ORDER BY `schedules`.`start_time` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `schedules`.`id`, `schedules`.`start_time`, `schedules`.`price`, `rooms`.`name` as `room_name`, `cinemas`.`name` as `cinema_name`, `cinemas`.`location`
+FROM `schedules`
+JOIN `rooms` ON `rooms`.`id` = `schedules`.`room_id`
+JOIN `cinemas` ON `cinemas`.`id` = `rooms`.`cinema_id`
+WHERE `schedules`.`movie_id` = :schedules.movie_id:
+ORDER BY `schedules`.`start_time` ASC', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\ScheduleController.php(36): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ScheduleController->getByMovieId('1')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ScheduleController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Service7\\public\\index.php')
+CRITICAL - 2025-12-19 15:43:41 --> [Caused by] Exception: Unable to prepare statement: 1, no such table: schedules
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 176.
+ 1 SYSTEMPATH\Database\SQLite3\Connection.php(176): SQLite3->query('SELECT `schedules`.`id`, `schedules`.`start_time`, `schedules`.`price`, `rooms`.`name` as `room_name`, `cinemas`.`name` as `cinema_name`, `cinemas`.`location`
+FROM `schedules`
+JOIN `rooms` ON `rooms`.`id` = `schedules`.`room_id`
+JOIN `cinemas` ON `cinemas`.`id` = `rooms`.`cinema_id`
+WHERE `schedules`.`movie_id` = \'1\'
+ORDER BY `schedules`.`start_time` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\SQLite3\Connection->execute('SELECT `schedules`.`id`, `schedules`.`start_time`, `schedules`.`price`, `rooms`.`name` as `room_name`, `cinemas`.`name` as `cinema_name`, `cinemas`.`location`
+FROM `schedules`
+JOIN `rooms` ON `rooms`.`id` = `schedules`.`room_id`
+JOIN `cinemas` ON `cinemas`.`id` = `rooms`.`cinema_id`
+WHERE `schedules`.`movie_id` = \'1\'
+ORDER BY `schedules`.`start_time` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `schedules`.`id`, `schedules`.`start_time`, `schedules`.`price`, `rooms`.`name` as `room_name`, `cinemas`.`name` as `cinema_name`, `cinemas`.`location`
+FROM `schedules`
+JOIN `rooms` ON `rooms`.`id` = `schedules`.`room_id`
+JOIN `cinemas` ON `cinemas`.`id` = `rooms`.`cinema_id`
+WHERE `schedules`.`movie_id` = \'1\'
+ORDER BY `schedules`.`start_time` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `schedules`.`id`, `schedules`.`start_time`, `schedules`.`price`, `rooms`.`name` as `room_name`, `cinemas`.`name` as `cinema_name`, `cinemas`.`location`
+FROM `schedules`
+JOIN `rooms` ON `rooms`.`id` = `schedules`.`room_id`
+JOIN `cinemas` ON `cinemas`.`id` = `rooms`.`cinema_id`
+WHERE `schedules`.`movie_id` = :schedules.movie_id:
+ORDER BY `schedules`.`start_time` ASC', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\ScheduleController.php(36): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ScheduleController->getByMovieId('1')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ScheduleController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Service7\\public\\index.php')
